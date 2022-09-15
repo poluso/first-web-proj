@@ -8,3 +8,13 @@ git push --all
 ssh keygen
 cat ~/.ssh/
 cat ~/.ssh/id_rsa.pub
+
+
+ubuntu commands:
+mkdir - make directory;
+cd - change directory;
+mv - move file or dir;
+ls - list;
+cp - copy + paste;
+rm - remove;
+touch - create file;

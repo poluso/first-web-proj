@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    font-size: 0;
+    font-size: 12px;
     border: none;
     outline: none;
 }
@@ -34,7 +34,8 @@ body {
     border-radius: 50px;
     fill: #fff;
 }
-#sidebar-unwrapped {
+#sidebar-background-unwrapped {
+    transition-duration: 300ms;
     visibility: hidden;
     position: fixed;
     background: rgba(0, 0, 0, 0.3);
@@ -43,6 +44,24 @@ body {
     left: 0;
     height: 100vh;
     width: 100%;
+    
+}
+#sidebar-unwrapped {
+    transition-duration: 300ms;
+    background: rgb(33 33 33);
+    width: 220px;
+    position: fixed;
+    top: 0px;
+
+    /* visibility: hidden;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;*/
+    
 }
 
 .class-sidebar-unwrapped {
@@ -60,6 +79,9 @@ body {
     justify-content: space-between;
     height: 35px;
 }
+.default-sidebar {
+    visibility: hidden;
+}
 .sidebar-cont {
     padding: 3px;
     display: flex;
@@ -70,6 +92,29 @@ body {
     /* background: rgb(33 33 33); */
     /* margin-bottom: 50px; */
 }
+.mini-sidebar {
+    background: rgb(33 33 33);
+    padding: 10px;
+    width: 80px;
+    /* height: 100%; */
+    position: fixed;
+    z-index: 100;
+    top: 49px;
+}
+.sidebar {
+    background: rgb(33 33 33);
+    padding: 10px;
+    width: 220px;
+    /* height: 100%; */
+    position: fixed;
+    z-index: 100;
+    top: 49px;
+}
+.sidebar>section {
+    border-bottom: 1px solid rgb(255 255 255 / 10%);
+    padding: 10px 0;
+}
+
 .list {
     height: 100%;
     margin-top: 49px;

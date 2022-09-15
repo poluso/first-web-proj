@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media-requests.css">
     <title>YouTube</title>
     
     <!-- git checkout
@@ -15,7 +16,7 @@
     <header class="header">
         <div class ="header-container-1 header-cont">
             <div class="header-content-1">
-                <button class="burger">
+                <button class="burger" id="burger-open">
                     <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M21,6H3V5h18V6z M21,11H3v1h18V11z M21,17H3v1h18V17z" class="style-scope yt-icon"></path></g></svg>
                 </button>
 
@@ -54,49 +55,124 @@
         <div class ="header-container-3 header-cont"></div>
 
     </header>
-    
-    <div id="sidebar-unwrapped">
-        <div class="class-sidebar-unwrapped">
-            <div class="sidebar-cont">
-                <div class="sidebar-button">
-                    <button class="burger">
-                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M21,6H3V5h18V6z M21,11H3v1h18V11z M21,17H3v1h18V17z" class="style-scope yt-icon"></path></g></svg>
-                    </button>
+    <div id="sidebar-background-unwrapped">
+
+        <div id="sidebar-unwrapped">
+            <div class="class-sidebar-unwrapped">
+                <div class="sidebar-cont">
+                    <div class="sidebar-button">
+                        <button class="burger" id="burger-close">
+                            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g class="style-scope yt-icon"><path d="M21,6H3V5h18V6z M21,11H3v1h18V11z M21,17H3v1h18V17z" class="style-scope yt-icon"></path></g></svg>
+                        </button>
+                    </div>
+                    
                 </div>
                 
             </div>
+            <div class="sidebar">
+                <section class="items">
+                    <div>
+                        <a href="#">
+                            Главная
+                        </a>
+                    </div>
+                    
+                    <div>
+                        <a href="#">
+                            Навигатор
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            Shorts
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            Подписки
+                        </a>
+                    </div>
+        
+                </section>
+                <section class="">
+                    <div>
+                        <a href="#">
+                            Библиотека
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            История
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            Ваши видео
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            Смотреть позже
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            Понравившиеся
+                        </a>
+                    </div>
+                    <button>
+                        Развернуть
+                    </button>
+                </section>
+                <section class="">
+                    <h3 class="sidebar-h">
+                        <div>Подписки</div>
+                    </h3>
+                    <div>
+                        <a href="#">
+                            Первый канал
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            Музончик топовый
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            Лучший шансон
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            Первый инфоциганский
+                        </a>
+                    </div>
+                    <button>
+                        <div>Показать еще 228 инфоциганских...</div>
+                    </button>
+                </section>
+                <section class="">
+        
+                </section>
+                <section class="">
+        
+                </section>
+                <section class="">
+        
+                </section>
+                <section class="">
+        
+                </section>
+            </div>
             
         </div>
-        <div class="sidebar">
-            <section class="items">
-                <div>
-                    <a href="#">
-                        Главная
-                    </a>
-                </div>
-                
-                <div>
-                    <a href="#">
-                        Навигатор
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                        Shorts
-                    </a>
-                </div>
-                <div>
-                    <a href="#">
-                        Подписки
-                    </a>
-                </div>
-    
-            </section>
-        </div>
-        
     </div>
+    
+    <div class="mini-sidebar">
 
-    <div class="sidebar">
+    </div>
+    <div class="sidebar default-sidebar">
 
         <section id="items">
             <div>

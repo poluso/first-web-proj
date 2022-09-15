@@ -9,16 +9,50 @@
 //         sidebarVisible = false;
 //     }
 // }
-
+const sidebarBack = document.querySelector('#sidebar-background-unwrapped');
 const sidebar = document.querySelector('#sidebar-unwrapped');
-const burger = document.querySelectorAll('burger');
+
+const burger = document.querySelectorAll('button.burger');
 const sidebarStyles = sidebar.style;
-let isSidebarVisible = false;
+const sidebarBackStyles = sidebarBack.style;
+
+const burgerOpen = document.querySelector('#burger-open');
+const burgerClose = document.querySelector('#burger-close');
+
+
+
+let isSidebarVisible = true;
+
+// if (sidebarStyles.visibility === 'visible') {
+//   isSidebarVisible = true;
+// } else {
+//   isSidebarVisible = false;
+// }
+
 
 const toggleSidebar = () => {
-  sidebarStyles.visibility = isSidebarVisible ? 'visible' : 'hidden';
-  isSidebarVisible = !isSidebarVisible;
-  alert(sidebarStyles.visibility);
+  if (sidebarBackStyles.visibility === 'visible') {
+    sidebarStyles.left = '-240px';
+    isSidebarVisible = false;
+  } else {
+    sidebarStyles.left = '0px';
+    isSidebarVisible = true;
+  }
+  //console.log("sdaf");
+  // if (sidebarStyles.visibility === )
+
+  sidebarBackStyles.visibility = isSidebarVisible ? 'visible' : 'hidden';
+  //isSidebarVisible = !isSidebarVisible;
 }
 
-burger.map(addEventListener("click", toggleSidebar));
+burgerOpen.addEventListener("click", toggleSidebar);
+burgerClose.addEventListener("click", toggleSidebar);
+
+//const burgerNew = .forEach(burger);
+// for (i of burger) {
+//   i.addEventListener("click", toggleSidebar);
+// }
+
+
+//burger.forEach();
+//console.log(burger);
