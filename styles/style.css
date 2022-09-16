@@ -27,93 +27,21 @@ body {
     top: 0;
 }
 .burger {
-    background: #313131;
+    background: rgb(33 33 33);
     height: 35px;
     width: 35px;
     padding: 7px;
     border-radius: 50px;
     fill: #fff;
 }
-#sidebar-background-unwrapped {
-    transition-duration: 300ms;
-    visibility: hidden;
-    position: fixed;
-    background: rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    
-}
-#sidebar-unwrapped {
-    transition-duration: 300ms;
-    background: rgb(33 33 33);
-    width: 220px;
-    position: fixed;
-    top: 0px;
-
-    /* visibility: hidden;
-    position: fixed;
-    background: rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;*/
-    
+.burger-onclick {
+    background-color: #313131;
+    /* transition-duration: 200ms; */
 }
 
-.class-sidebar-unwrapped {
-    background: rgb(33 33 33);
-    width: 220px;
-    /* height: 100%; */
-    position: fixed;
-    top: 0;
-    padding: 7px;
-    padding-right: 13px;
-    /* width: 100%; */
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 35px;
-}
-.default-sidebar {
-    visibility: hidden;
-}
-.sidebar-cont {
-    padding: 3px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 20px;
-    
-    /* background: rgb(33 33 33); */
-    /* margin-bottom: 50px; */
-}
-.mini-sidebar {
-    background: rgb(33 33 33);
-    padding: 10px;
-    width: 80px;
-    /* height: 100%; */
-    position: fixed;
-    z-index: 100;
-    top: 49px;
-}
-.sidebar {
-    background: rgb(33 33 33);
-    padding: 10px;
-    width: 220px;
-    /* height: 100%; */
-    position: fixed;
-    z-index: 100;
-    top: 49px;
-}
-.sidebar>section {
-    border-bottom: 1px solid rgb(255 255 255 / 10%);
-    padding: 10px 0;
-}
+
+
+
 
 .list {
     height: 100%;
@@ -218,20 +146,7 @@ body {
 .header-container-2 {
     width: 40%;
 }
-.sidebar {
-    background: rgb(33 33 33);
-    padding: 10px;
-    width: 220px;
-    /* height: 100%; */
-    position: fixed;
-    z-index: 100;
-    top: 49px;
-}
 
-.sidebar>section {
-    border-bottom: 1px solid rgb(255 255 255 / 10%);
-    padding: 10px 0;
-}
 
 #items > div {
     padding: 5px;
