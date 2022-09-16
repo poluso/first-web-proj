@@ -61,20 +61,14 @@ body {
     border-bottom: 1px solid rgb(255 255 255 / 10%);
     padding: 10px 0;
 }
-.items div {
-    padding: 5px;
-}
-.items div a {
-    font-size: 14px;
-    color: #fbfbfb;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+
+
 .subhead-main-cont {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 49px 0 0 240px;
+    margin: 49px 0 0 56px;
 }
 .header-cont {
     padding: 3px;
@@ -147,15 +141,10 @@ body {
     width: 40%;
 }
 
-
-#items > div {
+/* #items > div {
     padding: 5px;
-}
-#items a {
-    color: #fbfbfb;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
-}
+} */
+
 
 .main-subhead-cont {
     width: 100%;
