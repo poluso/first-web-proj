@@ -48,20 +48,29 @@
 .default-sidebar-items {
     font-size: 8px;
 }
-.sidebar-cont {
-    padding: 3px;
+.sidebar-button-cont {
+    /* padding: 3px; */
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 20px;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    font-size: 8px;
+    font-family: Roboto, Arial, sans-serif;
+    
+    /* height: 20px; */
     
     /* background: rgb(33 33 33); */
     /* margin-bottom: 50px; */
 }
+.sidebar-button {
+    margin-left: 7px;
+}
 .mini-sidebar {
     background: rgb(33 33 33);
     /* padding: 0px; */
-    width: 56px;
+    width: 70px;
     height: 100%;
     position: fixed;
     z-index: 100;
@@ -69,13 +78,9 @@
     box-sizing: border-box;
     /* font-size: 8px; */
 }
-.sidebar-cont {
-    display: flex;
-    flex-direction: column;
-    color: aliceblue;
-    font-size: 8px;
-    font-family: Roboto, Arial, sans-serif;
-}
+/* .sidebar-button-cont {
+
+} */
 .sidebar-span {
     font-size: 10px;
 }
