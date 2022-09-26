@@ -94,13 +94,19 @@ let isSidebarVisible = true;
 // } else {
 //   isSidebarVisible = false;
 // }
+
 const toggleSidebar = () => {
   if (sidebarBackStyles.visibility === "visible") {
-    sidebarStyles.left = "-240px";
-    isSidebarVisible = false;
+    setTimeout(() => {
+      sidebarStyles.left = "-240px";
+      isSidebarVisible = false;
+    }, 100);
+    
   } else {
-    sidebarStyles.left = "0px";
-    isSidebarVisible = true;
+    setTimeout(() => {
+      sidebarStyles.left = "0px";
+      isSidebarVisible = true;
+    }, 100);
   }
   //console.log("sdaf");
   // if (sidebarStyles.visibility === )
